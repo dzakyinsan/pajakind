@@ -36,3 +36,101 @@
     transform: rotate(360deg);
   }
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+
+.login-container {
+  margin-top: 5%;
+  border-radius: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.carousel-item {
+  background: linear-gradient(#f8f9fa, #4282e9);
+  padding-left: 10%;
+  padding-right: 10%;
+  max-width: 2200px;
+}
+.carousel-item-1 {
+  padding-top: 8%;
+  font-size: 22px;
+  padding-left: 150px;
+  padding-right: 60px;
+  line-height: 1.8;
+}
+.carousel-item-1 h1 {
+  font-weight: bold;
+  font-size: 60px;
+  color: black;
+  margin-bottom: 30px;
+}
+.download-at{
+  display: flex;
+  margin-top: 80px;
+  margin-left: -20px;
+}
+.dashboard-no-login {
+  height: 80vh;
+  border-bottom-right-radius: 300px;
+  background: #4d84e7;
+  text-align: center;
+}
+.dashboard-no-login h1 {
+  font-size: 40px;
+  color: whitesmoke;
+  font-family: "Raleway", sans-serif;
+}
+.db-button {
+  margin-top: 30px;
+  margin-left: 45%;
+  border-radius: 15px;
+  background: #f77d03;
+  color: white;
+  width: 200px;
+  padding: 15px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 300ms;
+}
+.db-button:hover {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  background: #fd5f32;
+}
+.dashboard-header {
+  font-family: "Raleway", sans-serif;
+  height: 100px;
+  background: #4282e9;
+  padding-left: 15%;
+  padding-top: 30px;
+  color: whitesmoke;
+}
+.db-main {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 50px;
+}
+.db-table-1 {
+  border-radius: 10px;
+  height: 80px;
+  display: flex;
+  padding-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: whitesmoke;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+.main-searchBar {
+  display: flex;
+  margin-top: 2%;
+  margin-right: 15%;
+  /* border: 2px solid black; */
+}
+.searchbar-1 {
+  height: 46px;
+  width: 600px;
+  border-radius: 5px;
+  background-color: #f1f3f4;
+}
