@@ -4,7 +4,6 @@ import Swal from "sweetalert2";
 
 export const onUserLogin = (email, password) => {
   return (dispatch) => {
-
     if (email === "" || password === "") {
       dispatch({ type: USER_LOGIN_FAILED, payload: "email and password must be entered" });
     } else {

@@ -25,7 +25,7 @@ const CarouselPage = () => {
             </Fade>
             <Fade right>
             <div>
-              <img className="d-block" src={require("./../assets/images/pick.png")} alt="first slide" height="900vh" />
+              <img className="d-block img-carousel" src={require("./../assets/images/pick.png")} alt="first slide"  />
             </div>
 
             </Fade>

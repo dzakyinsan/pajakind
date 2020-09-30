@@ -63,7 +63,7 @@
   color: black;
   margin-bottom: 30px;
 }
-.download-at{
+.download-at {
   display: flex;
   margin-top: 80px;
   margin-left: -20px;
@@ -79,9 +79,12 @@
   color: whitesmoke;
   font-family: "Raleway", sans-serif;
 }
+.center-btn{
+  display: flex;
+  justify-content: center;
+}
 .db-button {
   margin-top: 30px;
-  margin-left: 45%;
   border-radius: 15px;
   background: #f77d03;
   color: white;
@@ -133,4 +136,38 @@
   width: 600px;
   border-radius: 5px;
   background-color: #f1f3f4;
+}
+.img-dashboard{
+  max-width: 100%;
+  max-height:60vh ;
+}
+.img-carousel{
+  max-width: 100%;
+  max-height:900vh ;
+}
+
+
+@media (max-width: 600px) {
+  .carousel-item-1 {
+    padding-top: 8%;
+    font-size: 22px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .download-at {
+    display: grid;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  .img-carousel{
+    display: none;
+    max-width: 0;
+  max-height:0vh 
+  }
+  .dashboard-no-login {
+    border-bottom-right-radius: 0;
+  }
+  .dashboard-no-login h1 {
+    font-size: 30px;
+  }
 }

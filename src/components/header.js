@@ -6,6 +6,7 @@ import { Navbar, NavDropdown, Nav } from "react-bootstrap";
 const Header = () => {
   const dispatch = useDispatch();
   const loginOk = useSelector((state) => state.loginReducer.login);
+  const token=localStorage.getItem('token')
 
   return (
     <Navbar collapseOnSelect expand="lg" bg="light" variant="light" style={{ paddingLeft: "15%", paddingRight: "15%" }}>
@@ -17,7 +18,7 @@ const Header = () => {
         <Nav className="mr-auto">
           <Nav.Link href={"/"}>Home</Nav.Link>
           <Nav.Link href={"/dashboard"}>Dashboard</Nav.Link>
-          {loginOk ? (
+          {token ? (
             <Nav.Link onClick={() => dispatch(onUserLogout())}>Logout</Nav.Link>
           ) : (
             <NavDropdown title="Account" id="collasible-nav-dropdown">
@@ -26,7 +27,7 @@ const Header = () => {
             </NavDropdown>
           )}
         </Nav>
-        <Nav>{loginOk ? <Navbar.Text>Welcome, your loged in</Navbar.Text> : <Navbar.Text>Not login</Navbar.Text>}</Nav>
+        <Nav>{token ? <Navbar.Text>Welcome, your loged in</Navbar.Text> : <Navbar.Text>Not login</Navbar.Text>}</Nav>
       </Navbar.Collapse>
     </Navbar>
   );

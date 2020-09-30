@@ -17,11 +17,10 @@ function App() {
     var pass = localStorage.getItem("password");
     if (email) {
       dispatch(keepLogin(email, pass));
+      dispatch(onGetColor())
     }
-    dispatch(onGetColor())
   }, []);
-
-
+  
   return (
     <div>
       <Header />
